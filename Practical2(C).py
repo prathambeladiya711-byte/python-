@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 marks = int(input("Enter marks: "))
 
 if marks >= 90:
@@ -9,4 +10,17 @@ elif marks >= 60:
 elif marks >= 40:
     print("Grade D")
 else:
+=======
+marks = int(input("Enter marks: "))
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 60:
+    print("Grade C")
+elif marks >= 40:
+    print("Grade D")
+else:
+>>>>>>> 74749572667462e54cbe4527c6342a979a9c1499
     print("Fail")

@@ -1,27 +1,21 @@
-# Create a list of n integers
-n = int(input("Enter the number of elements: "))
+# Create a list
+n = int(input("Enter n: "))
 
-numbers = []
-
+a = []
 for i in range(n):
-    value = int(input(f"Enter element {i + 1}: "))
-    numbers.append(value)
+    a.append(int(input("Enter number: ")))
 
-print("Original list:", numbers)
+print("Original list:", a)
 
-# Insertion operation
-position = int(input("Enter position for insertion: "))
-value = int(input("Enter value to insert: "))
+# Insertion
+pos = int(input("Enter position: "))
+value = int(input("Enter value: "))
+a.insert(pos, value)
 
-numbers.insert(position, value)
-print("List after insertion:", numbers)
+print("After insertion:", a)
 
-# Deletion operation
-position = int(input("Enter position for deletion: "))
+# Deletion
+pos = int(input("Enter position to delete: "))
+a.pop(pos)
 
-if 0 <= position < len(numbers):
-    deleted_value = numbers.pop(position)
-    print("Deleted value:", deleted_value)
-    print("List after deletion:", numbers)
-else:
-    print("Invalid position")
+print("After deletion:", a)

@@ -1,18 +1,20 @@
+# Hello Dear all students .
 
-str1 = input("Enter the first string: ")
-str2 = input("Enter the second string: ")
+s1 = input("Enter first string: ")
+s2 = input("Enter second string: ")
 
-concatenated = str1 + " " + str2
-print("\nConcatenated String:", concatenated)
+# Concatenation
+print("Concatenation:", s1 + s2)
 
-print("Length of first string:", len(str1))
-print("Length of second string:", len(str2))
+# Length
+print("Length:", len(s1))
 
-print("Uppercase:", concatenated.upper())
-print("Lowercase:", concatenated.lower())
-print("Title Case:", concatenated.title())
+# Uppercase
+print("Uppercase:", s1.upper())
 
-start = int(input("\nEnter starting index for substring: "))
-end = int(input("Enter ending index for substring: "))
+# Lowercase
+print("Lowercase:", s1.lower())
 
-print("Extracted Substring:", concatenated[start:end])
+# Substring
+print("Substring:", s1[0:3])
+
